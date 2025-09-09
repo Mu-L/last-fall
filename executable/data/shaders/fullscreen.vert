@@ -9,7 +9,7 @@
 #include "engine/data_transform_2d.glsl"
 
 
-smoothEx varying vec2 v_v2Relative;
+smooth varying vec2 v_v2Relative;
 
 
 void VertexMain()

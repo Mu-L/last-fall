@@ -39,7 +39,6 @@ coreBool CoreApp::Settings::IsDemo() {return false;}
 // setup the application
 void CoreApp::Setup()
 {
-    Core::Manager::Resource->Load<coreModel>  ("default_sphere.md3z",     CORE_RESOURCE_UPDATE_AUTO,   "data/models/default_sphere.md3z", CORE_MODEL_LOAD_NO_CLUSTERS);
     Core::Manager::Resource->Load<coreModel>  ("object_cube.md3z",        CORE_RESOURCE_UPDATE_AUTO,   "data/models/object_cube.md3z", CORE_MODEL_LOAD_NO_CLUSTERS);
     Core::Manager::Resource->Load<coreModel>  ("object_enemy.md3z",       CORE_RESOURCE_UPDATE_AUTO,   "data/models/object_enemy.md3z", CORE_MODEL_LOAD_NO_CLUSTERS);
     Core::Manager::Resource->Load<coreModel>  ("object_player.md3z",      CORE_RESOURCE_UPDATE_AUTO,   "data/models/object_player.md3z", CORE_MODEL_LOAD_NO_CLUSTERS);

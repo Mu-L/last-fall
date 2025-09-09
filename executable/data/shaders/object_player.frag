@@ -9,9 +9,9 @@
 #include "shared.glsl"
 
 
-smoothEx varying vec3  v_v3Normal;
-smoothEx varying vec3  v_v3Relative;
-smoothEx varying float v_v1Length;
+smooth varying vec3  v_v3Normal;
+smooth varying vec3  v_v3Relative;
+smooth varying float v_v1Length;
 
 
 void FragmentMain()

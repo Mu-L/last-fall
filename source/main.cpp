@@ -30,7 +30,7 @@ void CoreApp::Init()
 
     s_pFullscreen->DefineProgram("fullscreen_program");
 
-    s_MusicPlayer.AddMusicFolder("data/music", "*.opus");
+    s_MusicPlayer.AddMusicDirectory("data/music", "*.opus");
     s_MusicPlayer.StartThread();
     s_MusicPlayer.Play();
 
@@ -80,8 +80,7 @@ void CoreApp::Move()
         Core::Reshape();
     }
 
-    const coreVector2 vResolution = Core::System->GetResolution();
-    s_pFullscreen->SetSize(vResolution / vResolution.Min());
+    s_pFullscreen->SetSize(Core::System->GetCanonSize());
 
     g_pGame      ->Move();
     g_pInterface ->Move();
